@@ -1,0 +1,41 @@
+.mainHeaderDiv {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    width: 95%;
+    margin-left: 2%;
+    margin-right: 5%;
+    margin-top: 2%;
+    height: 12%;
+}
+
+ul{
+    margin-top: 2%;
+}
+
+li {
+    display: inline;
+    padding-right: 2%;
+}
+
+a{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+a:link { text-decoration: none; }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 425px) {
+    .mainHeaderDiv {
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
+        height: 8%;
+    }
+}
+

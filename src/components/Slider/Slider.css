@@ -1,0 +1,48 @@
+.carousal{
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .carousal .carousal_item,
+  .carousal .carousal_item--hidden{
+    display: none;
+  }
+  
+  .carousal .carousal_item img{
+    width: 50%;
+    max-width: 600px;
+    height: 14%;
+    margin-left: 50%;
+  }
+  
+  .carousal .carousal_item--visible{
+    display: block;
+    animation: fadeanimation 0.5s;
+  }
+  
+  .carousal .carousal_actions{
+    display: flex;
+    width: 46%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 52%;
+  }
+  
+  .carousal .carousal_actions button{
+    border-radius: 50px;
+    border:0;
+    font-weight: bold;
+  }
+  
+  @keyframes fadeanimation{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+      transform: opacity linear;
+    }
+  }

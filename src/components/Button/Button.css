@@ -1,0 +1,32 @@
+.btnContactUs {
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFCFA;
+    width: 10%;
+    margin-left: 80%;
+    margin-right: 5%;
+    margin-top: 3.3%;
+    height: 6%;
+}
+
+.arrowClass{
+    padding-left: 12px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 425px) {
+    ul{
+        display: none;
+    }
+    .btnContactUs {
+        position: absolute;
+        z-index: 1;
+        background-color: #FFFCFA;
+        width: 25%;
+        margin-left: 6%;
+        margin-right: 5%;
+        margin-top: 3%;
+        height: 4%;
+        font-size: 24px;
+    }
+}
+

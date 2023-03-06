@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.bannerBackground {
+  background-image: url("/img1.44093809.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  opacity: 1;
+  animation: banneranimation 5s ease;
+}
+
+@keyframes banneranimation {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.welcomeText {
+  color: #ffffff;
+  margin-top: 220px;
+  margin-left: 135px;
+  position: absolute;
+  font-size: 18px;
+  font-weight: 400;
+  animation: welcometextanimation 2s ease 200ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes welcometextanimation {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+.fromFarmText {
+  color: #ffffff;
+  margin-top: 250px;
+  margin-left: 135px;
+  position: absolute;
+  font-size: 64px;
+  font-weight: 500;
+  background: linear-gradient(to right, #000000, #ffffff, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 6s infinite linear;
+  animation-duration: 3s;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+.textSection {
+  margin-top: 5%;
+}
+
+.headingText {
+  font-size: 45px;
+  font-weight: 500;
+  text-align: center;
+  animation-name: headingtextanimation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes headingtextanimation {
+  0% {
+    transform: scale(0, 0.025);
+  }
+  50% {
+    transform: scale(1, 0.025);
+  }
+}
+.paraText {
+  color: #7A7777;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  animation-name: paratextanimation;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+}
+
+.topnav {
+  display: none;
+}
+
+@keyframes paratextanimation {
+  0% {
+    color: orange;
+    transform: scale(0, 0.025);
+  }
+  50% {
+    color: green;
+    transform: scale(1, 0.025);
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
+  .welcomeText {
+    color: #ffffff;
+    margin-top: 408px;
+    margin-left: 135px;
+    position: absolute;
+    font-size: 24px;
+    font-weight: 400;
+    animation: welcometextanimation 2s ease 200ms;
+    animation-iteration-count: 1;
+  }
+  @keyframes welcometextanimation {
+    from {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0px);
+    }
+  }
+  .fromFarmText {
+    margin-top: 460px;
+    font-size: 84px;
+    background: linear-gradient(to right, #000000, #ffffff, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 6s infinite linear;
+    animation-duration: 3s;
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 600px;
+    }
+    100% {
+      background-position: 600px;
+    }
+  }
+}
+.mainHeaderDiv {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    width: 95%;
+    margin-left: 2%;
+    margin-right: 5%;
+    margin-top: 2%;
+    height: 12%;
+}
+
+ul{
+    margin-top: 2%;
+}
+
+li {
+    display: inline;
+    padding-right: 2%;
+}
+
+a{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+a:link { text-decoration: none; }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 425px) {
+    .mainHeaderDiv {
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
+        height: 8%;
+    }
+}
+
+
+.btnContactUs {
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFCFA;
+    width: 10%;
+    margin-left: 80%;
+    margin-right: 5%;
+    margin-top: 3.3%;
+    height: 6%;
+}
+
+.arrowClass{
+    padding-left: 12px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 425px) {
+    ul{
+        display: none;
+    }
+    .btnContactUs {
+        position: absolute;
+        z-index: 1;
+        background-color: #FFFCFA;
+        width: 25%;
+        margin-left: 6%;
+        margin-right: 5%;
+        margin-top: 3%;
+        height: 4%;
+        font-size: 24px;
+    }
+}
+
+
+.carousal{
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .carousal .carousal_item,
+  .carousal .carousal_item--hidden{
+    display: none;
+  }
+  
+  .carousal .carousal_item img{
+    width: 50%;
+    max-width: 600px;
+    height: 14%;
+    margin-left: 50%;
+  }
+  
+  .carousal .carousal_item--visible{
+    display: block;
+    animation: fadeanimation 0.5s;
+  }
+  
+  .carousal .carousal_actions{
+    display: flex;
+    width: 46%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 52%;
+  }
+  
+  .carousal .carousal_actions button{
+    border-radius: 50px;
+    border:0;
+    font-weight: bold;
+  }
+  
+  @keyframes fadeanimation{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+      transform: opacity linear;
+    }
+  }
+
+/*# sourceMappingURL=/tentwentyproject.e31bb0bc.css.map */
