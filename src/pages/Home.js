@@ -7,7 +7,7 @@ import Slider from "../components/Slider/Slider"
 const Home = () => {
 
   return (
-    <div className="container-fluid">
+    <div className ="container-fluid">
        <Header />
       <Button /> 
       <div class="topnav">
